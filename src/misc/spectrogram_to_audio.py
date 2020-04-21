@@ -21,14 +21,19 @@ def write_audio_to_file(audio,name):
     return
 
 def make_spectrogram(audio,sr):
-    # D = np.abs(librosa.stft(audio))**2
-    # spec= librosa.feature.melspectrogram(y=audio, sr=sr, S = D)
     spec = librosa.stft(audio)
-    librosa.display.specshow(librosa.power_to_db(spec, ref=np.max))
+
+    # librosa.display.specshow(librosa.power_to_db(spec, ref=np.max))
+    a = np.abs(spec)**2
+    a = a/np.amax(a)
+    a = 10*np.log10(a)
+    # a = a*255/np.amax(a)
+    a = a*255/np.amax(a)
+    plt.imshow(a)
+    plt.show()
     return spec
 
 def make_audio(spec):
-    # res = librosa.feature.inverse.mel_to_audio(spec)
     res = librosa.griffinlim(spec)
     return res
 
@@ -42,3 +47,5 @@ def convert_data():
     return
 
 specto = convert_data()
+import cv2
+im = cv2.imread("spec.png",0)
