@@ -4,7 +4,7 @@
 >## Express emotion through Images
 
 
-Contains code for SpectroGAN, USC EE 599 Spring 2020.
+Contains code for SpectroGAN, USC EE599 Deep Learning for Engineers Spring 2020.
 
 Github link: [https://github.com/hegde95/GAN-for-speech-spectrogram](https://github.com/hegde95/GAN-for-speech-spectrogram) <br/>
 
