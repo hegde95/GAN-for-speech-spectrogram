@@ -1,7 +1,7 @@
 # SpectroGAN
 
 
->## Express emotion through Images
+>## Express emotion through Images>
 
 
 Contains code for SpectroGAN, USC EE599 Deep Learning for Engineers Spring 2020.
