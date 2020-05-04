@@ -23,7 +23,7 @@ For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/118897
 ### -- Data Conversion: <br/>
 The source and target data format in this project are .wav files, but our GAN's work on images. 
 1. **Audio to Image**: To convert the audio to spectrograms we sampled the audio at 16000 Hz and performed stft of lenght 512 and used a hop lenght of 256. The source audio files were also trimmed as to obtain a spectrogram of size 257 X 257. This image padded was with 0's to get a 260 X 260 array, which is the input and output to our GAN.
-2. **Image to Audio**: To convert the generated spectrograms to audio, we used the[griffin-lim algorithm](https://www.researchgate.net/publication/261315209_A_Fast_Griffin-Lim_Algorithm) on the clipped image. We made sure that that the fft lenght and the hop lenght used in the istft was the same as before.<br />
+2. **Image to Audio**: To convert the generated spectrograms to audio, we used the [griffin-lim algorithm](https://www.researchgate.net/publication/261315209_A_Fast_Griffin-Lim_Algorithm) on the clipped image. We made sure that that the fft lenght and the hop lenght used in the istft was the same as before.<br />
 
 ### -- Patch GANs: <br/>
 Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
@@ -38,6 +38,6 @@ Here is a video showing a demo<br/>
 Here is a link to our report<br/>
 
 ## Contributors <br/>
-Karkala Shashank Hegde - <br/>
-Vineet Ellore - <br/>
-Ashwin T R - <br/>
+Karkala Shashank Hegde - [https://www.linkedin.com/in/karkala-shashank-hegde/](https://www.linkedin.com/in/karkala-shashank-hegde/)<br/>
+Vineeth Ellore - [https://www.linkedin.com/in/vineethellore/](https://www.linkedin.com/in/vineethellore/) <br/>
+Ashwin Telagimathada Ravi - [https://www.linkedin.com/in/ashwin-tr/](https://www.linkedin.com/in/ashwin-tr/)<br/>
