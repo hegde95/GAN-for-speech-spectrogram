@@ -17,11 +17,26 @@ Recent studies have successfully shown how style transfer can be applied on imag
 
 
 ## Methodology <br/>
-### Data set: <br/>
-For this project we chose the RAVDESS [RAVDESS](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/) data set. The data set contains emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing)
+### -- Data set: <br/>
+For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing)
 <br />
-
-### Patch GANs: <br/>
+### -- Data Conversion: <br/>
+The source and target data format in this project are .wav files, but our GAN's work on images. 
+1. **Audio to Image**: To convert the audio to spectrograms we sampled the audio at 16000 Hz and performed stft of lenght 512 and used a hop lenght of 256. The source audio files were also trimmed as to obtain a spectrogram of size 257 X 257. This image padded was with 0's to get a 260 X 260 array, which is the input and output to our GAN.
+2. **Image to Audio**: To convert the generated spectrograms to audio, we used the[griffin-lim algorithm](https://www.researchgate.net/publication/261315209_A_Fast_Griffin-Lim_Algorithm) on the clipped image. We made sure that that the fft lenght and the hop lenght used in the istft was the same as before.<br />
+### -- Patch GANs: <br/>
 Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
 
+## Results <br/>
+asdasd asdasd asdasd<br/>
 
+Here is the link to our presentation<br/>
+
+Here is a video showing a demo<br/>
+
+Here is a link to our report<br/>
+
+## Contributors <br/>
+Karkala Shashank Hegde - <br/>
+Vineet Ellore - <br/>
+Ashwin T R - <br/>
