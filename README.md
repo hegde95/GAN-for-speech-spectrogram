@@ -17,4 +17,4 @@ Recent studies have successfully shown how style transfer can be applied on imag
 
 ## Methodology <br/>
 ### Patch GANs: <br/>
-**Test on normal images**: Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
+Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
