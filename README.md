@@ -6,7 +6,7 @@
 
 Contains code for SpectroGAN, USC EE599 Deep Learning for Engineers Spring 2020.
 
-Github link: [https://github.com/hegde95/GAN-for-speech-spectrogr[![Input Calm speech](/GAN-for-speech-spectrogram/results/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/calm_orig2.wav)am](https://github.com/hegde95/GAN-for-speech-spectrogram) <br/>
+Github link: [https://github.com/hegde95/GAN-for-speech-spectrogram](https://github.com/hegde95/GAN-for-speech-spectrogram) <br/>
 
 
 
