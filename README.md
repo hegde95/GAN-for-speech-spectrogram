@@ -33,6 +33,15 @@ Below are a couple of input and output audio files from calm to angry with the c
 [calm](/results/calm_orig2.wav)
 [anger](/results/calm_orig2_Fearful_generated.wav)
 
+click <audio id="ID004" source src="/results/calm_orig2.wav"></audio><button onclick="playAudio('ID004')" type="button">play4</button> and then <audio id="ID003" source src="/results/calm_orig2.wav"></audio><button onclick="playAudio('ID003')" type="button">play3</button>
+<script>
+function playAudio(audio_element) {
+	var x = document.getElementById(audio_element);
+	x.play();
+}
+</script>
+
+
 Here is the link to our presentation<br/>
 
 Here is a video showing a demo<br/>
