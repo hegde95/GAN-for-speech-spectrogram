@@ -32,9 +32,6 @@ Initially we constructed an CycleGAN to implement style trasfer. For our project
 Below are a couple of input and output audio files from calm to angry with the corresponding spectrograms. <br/>
 [calm](/results/calm_orig2.wav)
 [anger](/results/calm_orig2_Fearful_generated.wav) <br/>
- 
-<audio src="/results/calm_orig2.wav" preload="auto" /> <br/>
-
 
 Here is the link to our presentation<br/>
 
