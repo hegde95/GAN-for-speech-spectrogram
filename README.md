@@ -40,9 +40,7 @@ Below are a couple of input and output audio files from calm to angry with the c
 |                                                      Calm                                                      |                                                         Angry                                                          |
 | :--------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
 |        [![Input Calm speech](/GAN-for-speech-spectrogram/results/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/calm_orig2.wav)         |        [![Output Angry speech](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.wav)         |
-|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/calm_orig2.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.wav)
-    |
-| [![Input Calm speech](/GAN-for-speech-spectrogram/results/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/calm_orig2.wav) | [![Output Angry speech](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.wav) |
+|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/calm_orig2.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/calm_orig2_Fearful_generated.wav) |
 
 
 Here is the link to our presentation<br/>
