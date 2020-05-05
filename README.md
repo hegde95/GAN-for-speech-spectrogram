@@ -33,8 +33,8 @@ Below are a couple of input and output audio files from calm to angry with the c
 
 
 
-[![Input Calm speech](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2.jpg "Input Calm speech")](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2.wav)
-[![Output Angry speech](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2_Fearful_generated.wav)
+[![Input Calm speech](/results/calm_orig2.jpg "Input Calm speech")](/results/calm_orig2.wav)
+[![Output Angry speech](/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/results/calm_orig2_Fearful_generated.wav)
 
 [calm](/results/calm_orig2.wav)
 [anger](/results/calm_orig2_Fearful_generated.wav)
