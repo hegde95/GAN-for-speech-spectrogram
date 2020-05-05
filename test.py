@@ -3,7 +3,7 @@
 """
 Created on Mon May  4 18:11:08 2020
 
-@author: shashank
+@author: vineeth, ashwin, shashank
 """
 
 import librosa
