@@ -1,5 +1,7 @@
 # SpectroGAN
-![Spectrogram](/GAN-for-speech-spectrogram/results/calm_orig1.jpg "Input Calm speech")
+<p align="center">
+  ![Spectrogram](/GAN-for-speech-spectrogram/results/calm_orig1.jpg "Input Calm speech")
+</p>
 
 >## Express emotion through Images
 
