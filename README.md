@@ -18,7 +18,7 @@ Recent studies have successfully shown how style transfer can be applied on imag
 
 ## Methodology <br/>
 ### -- Data set: <br/>
-For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing)
+For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing). For this project, we chose to convert audio from "calm" to "anger" and "fearful". 
 <br />
 ### -- Data Conversion: <br/>
 The source and target data format in this project are .wav files, but our GAN's work on images. 
@@ -29,7 +29,8 @@ The source and target data format in this project are .wav files, but our GAN's 
 Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
 
 ## Results <br/>
-asdasd asdasd asdasd<br/>
+Below are a couple of input and output audio files from calm to angry with the corresponding spectrograms. <br/>
+
 
 Here is the link to our presentation<br/>
 
