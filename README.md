@@ -31,8 +31,10 @@ Initially we constructed an CycleGAN to implement style trasfer. For our project
 ## Results <br/>
 Below are a couple of input and output audio files from calm to angry with the corresponding spectrograms. <br/>
 
-[![Input Calm speech](/results/calm_orig2.jpg "Input Calm speech")](/results/calm_orig2.wav)
-[![Output Angry speech](/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](/results/calm_orig2_Fearful_generated.wav)
+
+
+[![Input Calm speech](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2.jpg "Input Calm speech")](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2.wav)
+[![Output Angry speech](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2_Fearful_generated.jpg "Output Angry speech")](https://github.com/hegde95/GAN-for-speech-spectrogram/tree/master/results/calm_orig2_Fearful_generated.wav)
 
 [calm](/results/calm_orig2.wav)
 [anger](/results/calm_orig2_Fearful_generated.wav)
