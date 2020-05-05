@@ -1,5 +1,5 @@
 # SpectroGAN
-
+![Spectrogram](/GAN-for-speech-spectrogram/results/calm_orig1.jpg "Input Calm speech")
 
 >## Express emotion through Images
 
@@ -29,7 +29,7 @@ The source and target data format in this project are .wav files, but our GAN's 
 Initially we constructed an CycleGAN to implement style trasfer. For our project we attemted to implement a Patch GAN. The code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
 
 ## Results <br/>
-Below are a couple of input and output audio files from calm to angry with the corresponding spectrograms. (Click on the image to hear the audio.) <br/>
+Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (Click on the image to hear the audio.) <br/>
 
 
 |Sl. No.|                                                      Calm                                                      |                                                         Angry                                                          |                                                         Fearful                                                          |
