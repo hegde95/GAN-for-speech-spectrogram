@@ -207,7 +207,7 @@ def make_test_folder(X_in, X_out, name, step, n_samples=5):
 		plt.subplot(2, n_samples, 1 + i)
 		plt.axis('off')
 		plt.imshow(X_in[i].reshape(520,520), cmap='gray')
-		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"), X_in[i].reshape(260,260))
+		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"), X_in[i].reshape(520,520))
 		im = cv2.imread(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"),-1)
 		im = im[:513,:513]
 		im = (im*80.0/255.0 ) -80.0
@@ -219,7 +219,7 @@ def make_test_folder(X_in, X_out, name, step, n_samples=5):
 		plt.subplot(2, n_samples, 1 + n_samples + i)
 		plt.axis('off')
 		plt.imshow(X_out[i].reshape(520,520), cmap='gray')
-		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"), X_out[i].reshape(260,260))
+		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"), X_out[i].reshape(520,520))
 		im = cv2.imread(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"),-1)
 		im = im[:513,:513]
 		im = (im*80.0/255.0 ) -80.0
