@@ -31,7 +31,7 @@ The source and target data format in this project are .wav files, but our GAN's 
 For our project we attemted to implement a CycleGAN as this has been shown to perform well on style transfer tasks. Also, to be size (and therefore fft length) independent, we use a PatchGAN model for our descriminator network .This code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
 
 ## Results <br/>
-Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (Click on the image to hear the audio.) <br/>
+Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (**Click on the image to hear the audio**.) <br/>
 
 ### Audio from same data set:<br />
 
