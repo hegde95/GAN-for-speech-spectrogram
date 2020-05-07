@@ -19,8 +19,8 @@ from scipy.io.wavfile import write
 
 
 path_to_models = "./models"
-path_to_audio = "./test_audio"
-path_to_results = "./results"
+path_to_audio = "./test_audio/SeenAudio"
+path_to_results = "./results/GoodAudio"
 
 def get_spectrogram(name_of_audio):
     y, sr = librosa.load(path.join(path_to_audio,name_of_audio),sr=16000)
@@ -112,6 +112,6 @@ def tester(name_of_audio,name_of_model):
     spec_to_audio(B_generated[0],name_gen)
     
 if __name__ == "__main__":
-    name_of_audio = "calm_kan.wav"
-    name_of_model = "Calm2Anger_generator.h5"
+    name_of_audio = "calm_010.wav"
+    name_of_model = "Calm2Fearful_generator.h5"
     tester(name_of_audio,name_of_model)
