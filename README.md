@@ -33,6 +33,15 @@ For our project we attemted to implement a CycleGAN as this has been shown to pe
 ## Results <br/>
 Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (Click on the image to hear the audio.) <br/>
 
+### Audio from same data set:<br />
+
+|script|                                                      Calm                                                      |                                                         Angry                                                          |                                                         Fearful                                                          |
+| :--------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|"Dogs are sitting by the door"|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06_Anger_generated.wav) |   [![Output Fearful speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_06_Fearful_generated.wav) |
+
+The above samples show that the spectrograms of angry and fearful speech have more predominant and spaced out harmonics. These are characteristics of angry and fearful speech.<br />
+
+
 ### Unseen audio from same data set:<br />
 
 |script|                                                      Calm                                                      |                                                         Angry                                                          |                                                         Fearful                                                          |
@@ -40,7 +49,7 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 |"Dogs are sitting by the door"|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1_Anger_generated.wav) |   [![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig1_Fearful_generated.wav) |
 |"Kids are talking by the door"|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig2.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/cUnseenAudio/alm_orig2.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig2_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig2_Anger_generated.wav) |   [![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig2_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_orig2_Fearful_generated.wav) |
 
-The above samples show that the spectrograms of angry and fearful speech have more predominant and spaced out harmonics. These are characteristics of angry and fearful speech.<br />
+<br />
 
 ### Same script by unseen actor:<br />
 
