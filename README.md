@@ -73,7 +73,7 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 
 
 
-Here is the link to our [presentation](/GAN-for-speech-spectrogram/EE599_final_presentation.pptx)<br/>
+Here is the link to our [presentation](/EE599_final_presentation.pptx)<br/>
 
 Here is a video showing a demo<br/>
 
