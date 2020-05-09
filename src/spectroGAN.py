@@ -43,7 +43,7 @@ path_to_npz = "/home/ec2-user/project/"+name_of_npz
 
 fft_len = 512
 spec_dim = 260
-hop_length = 128
+hop_length = 256
 
 path_to_logs = mkdir(main_dir,"logs")
 path_to_log = mkdir(path_to_logs,domain_a+'-'+domain_b+'_'+str(int(time.time())))
