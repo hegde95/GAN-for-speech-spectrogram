@@ -1,6 +1,6 @@
 # SpectroGAN
 <p align="center">
-    <img src="/GAN-for-speech-spectrogram/results/gif.gif" alt="gif"/>
+    <gif src="/GAN-for-speech-spectrogram/results/gif.gif" alt="gif"/>
 </p>
 
 >## Express emotion through Images
