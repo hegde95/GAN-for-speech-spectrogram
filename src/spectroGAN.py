@@ -6,8 +6,8 @@ Created on Mon May  4 23:46:49 2020
 @author: shashank, vineeth, ashwin
 """
 import numpy as np
-import tensorflow as tf
-import tensorflow_addons as tfa
+#import tensorflow as tf
+#import tensorflow_addons as tfa
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.initializers import RandomNormal
 from tensorflow.keras.models import Model
@@ -17,7 +17,7 @@ from tensorflow.keras.layers import Conv2DTranspose
 from tensorflow.keras.layers import LeakyReLU
 from tensorflow.keras.layers import Activation
 from tensorflow.keras.layers import Concatenate
-from tensorflow.keras.utils import plot_model
+#from tensorflow.keras.utils import plot_model
 from tensorflow_addons.layers import InstanceNormalization
 import matplotlib.pyplot as plt
 import cv2
@@ -79,7 +79,7 @@ def define_discriminator(image_shape):
 	model = Model(in_image, patch_out)
 	# compile model
 	model.compile(loss='mse', optimizer=Adam(lr=0.0002, beta_1=0.5), loss_weights=[0.5])
-	plot_model(model, to_file='discriminator_model.png', show_shapes=True, show_layer_names=True)
+	# plot_model(model, to_file='discriminator_model.png', show_shapes=True, show_layer_names=True)
 	return model
 
 # generator a resnet block
