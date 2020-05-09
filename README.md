@@ -35,6 +35,7 @@ calm2disgust - https://drive.google.com/uc?id=14s7kWrDQP61X9QXYDV-W3W4YIukJs_55
 calm2anger - https://drive.google.com/uc?id=14q4aZseMCQO_xbbmX-JRsbRSlGX9bB3E <br />
 
 <br />
+
 ### -- Data Conversion: <br/>
 The source and target data format in this project are .wav files, but our GAN's work on images. 
 1. **Audio to Image**: To convert the audio to spectrograms we sampled the audio at 16000 Hz and performed stft of lenght 512 and used a hop lenght of 256. The source audio files were also trimmed as to obtain a spectrogram of size 257 X 257. This image padded was with 0's to get a 260 X 260 array, which is the input and output to our GAN.
