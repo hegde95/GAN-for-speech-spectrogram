@@ -34,11 +34,12 @@ def mkdir(base, name):
     os.makedirs(path)
   return path
 
-# change the following 4 lines
+# change the following lines
 main_dir = "/content/drive/My Drive/EE599/Project"
-path_to_npz = "/content/drive/My Drive/EE599/Project/npzs3/happy2sad.npz"
 domain_a = "happy"
 domain_b = "sad"
+name_of_npz = domain_a+"2"+domain_b+".npz"
+path_to_npz = "/content/drive/My Drive/EE599/Project/npzs3/"+name_of_npz
 fft_len = 512
 spec_dim = 260
 hop_length = 128
@@ -359,12 +360,12 @@ def train(d_model_A, d_model_B, g_model_AtoB, g_model_BtoA, c_model_AtoB, c_mode
 		# summarize performance
 		print('>%d, dA[%.3f,%.3f] dB[%.3f,%.3f] g[%.3f,%.3f]' % (i+1, dA_loss1,dA_loss2, dB_loss1,dB_loss2, g_loss1,g_loss2))
 		# evaluate the model performance every so often
-		if (i+1) % (bat_per_epo * 1) == 0:
+		if (i+1) % (bat_per_epo * 3) == 0:
 			# plot A->B translation
 			summarize_performance(i, g_model_AtoB, trainA, domain_a+'_to_'+domain_b)
 			# plot B->A translation
 			summarize_performance(i, g_model_BtoA, trainB, domain_b+'_to_'+domain_a)
-		if (i+1) % (bat_per_epo * 5) == 0:
+		if (i+1) % (bat_per_epo * 15) == 0:
 			# save the models
 			save_models(i, g_model_AtoB, g_model_BtoA)
    
