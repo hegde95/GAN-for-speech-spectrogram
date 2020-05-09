@@ -35,11 +35,12 @@ def mkdir(base, name):
   return path
 
 # change the following lines
-main_dir = "/content/drive/My Drive/EE599/Project"
-domain_a = "happy"
-domain_b = "sad"
+main_dir = "/home/ec2-user/project"
+domain_a = "calm"
+domain_b = "surprised"
 name_of_npz = domain_a+"2"+domain_b+".npz"
-path_to_npz = "/content/drive/My Drive/EE599/Project/npzs3/"+name_of_npz
+path_to_npz = "/home/ec2-user/project/"+name_of_npz
+
 fft_len = 512
 spec_dim = 260
 hop_length = 128
