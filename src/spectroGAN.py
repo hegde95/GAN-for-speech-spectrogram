@@ -39,6 +39,9 @@ main_dir = "/content/drive/My Drive/EE599/Project"
 path_to_npz = "/content/drive/My Drive/EE599/Project/npzs3/happy2sad.npz"
 domain_a = "happy"
 domain_b = "sad"
+fft_len = 512
+spec_dim = 260
+hop_length = 128
 
 path_to_logs = mkdir(main_dir,"logs")
 path_to_log = mkdir(path_to_logs,domain_a+'-'+domain_b+'_'+str(int(time.time())))
@@ -206,25 +209,25 @@ def make_test_folder(X_in, X_out, name, step, n_samples=5):
 	for i in range(n_samples):
 		plt.subplot(2, n_samples, 1 + i)
 		plt.axis('off')
-		plt.imshow(X_in[i].reshape(520,520), cmap='gray')
-		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"), X_in[i].reshape(520,520))
+		plt.imshow(X_in[i].reshape(spec_dim,spec_dim), cmap='gray')
+		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"), X_in[i].reshape(spec_dim,spec_dim))
 		im = cv2.imread(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".jpg"),-1)
-		im = im[:513,:513]
+		im = im[:fft_len//2 + 1,:fft_len//2 + 1]
 		im = (im*80.0/255.0 ) -80.0
 		im = librosa.db_to_amplitude(im)
-		y2 = griffinlim(im,hop_length=128)
+		y2 = griffinlim(im,hop_length=hop_length)
 		write(path.join(path_to_step_folder_name,str(i)+"_real_"+name.split('_')[0]+".wav"), 16000, y2*1.5)
 	# plot translated image
 	for i in range(n_samples):
 		plt.subplot(2, n_samples, 1 + n_samples + i)
 		plt.axis('off')
-		plt.imshow(X_out[i].reshape(520,520), cmap='gray')
-		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"), X_out[i].reshape(520,520))
+		plt.imshow(X_out[i].reshape(spec_dim,spec_dim), cmap='gray')
+		imageio.imwrite(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"), X_out[i].reshape(spec_dim,spec_dim))
 		im = cv2.imread(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".jpg"),-1)
-		im = im[:513,:513]
+		im = im[:fft_len//2 + 1,:fft_len//2 + 1]
 		im = (im*80.0/255.0 ) -80.0
 		im = librosa.db_to_amplitude(im)
-		y2 = griffinlim(im,hop_length=128)
+		y2 = griffinlim(im,hop_length=hop_length)
 		write(path.join(path_to_step_folder_name,str(i)+"_generated_"+name.split('_')[2]+".wav"), 16000, y2*1.5)
 	# save plot to file
 	filename1 = '%s_generated_plot_%06d.png' % (name, (step+1))
@@ -373,7 +376,7 @@ print('Loaded', dataset[0].shape, dataset[1].shape)
 # define input shape based on the loaded dataset
 image_shape = dataset[0].shape[1:]
 
-image_shape = (520,520,1)
+image_shape = (spec_dim,spec_dim,1)
 
 # generator: A -> B
 g_model_AtoB = define_generator(image_shape)
