@@ -194,14 +194,14 @@ def generate_fake_samples(g_model, dataset, patch_shape):
 	return X, y
 
 # save the generator models to file
-def save_models(step, g_model_AtoB, g_model_BtoA):
+def save_models(step, g_model_AtoB, g_model_BtoA, domain_a, domain_b ):
 	path_to_step_folder = mkdir(path_to_log,str(step+1))
 
 	# save the first generator model
-	filename1 = 'g_model_AtoB_%06d.h5' % (step+1)
+	filename1 = 'g_model_'+domain_a+'2'+domain_b+'_%06d.h5' % (step+1)
 	g_model_AtoB.save(path.join(path_to_step_folder,filename1))
 	# save the second generator model
-	filename2 = 'g_model_BtoA_%06d.h5' % (step+1)
+	filename2 = 'g_model_'+domain_b+'2'+domain_a+'_%06d.h5' % (step+1)
 	g_model_BtoA.save(path.join(path_to_step_folder,filename2))
 	print('>Saved: %s and %s' % (filename1, filename2))
  
@@ -368,7 +368,7 @@ def train(d_model_A, d_model_B, g_model_AtoB, g_model_BtoA, c_model_AtoB, c_mode
 			summarize_performance(i, g_model_BtoA, trainB, domain_b+'_to_'+domain_a)
 		if (i+1) % (bat_per_epo * 15) == 0:
 			# save the models
-			save_models(i, g_model_AtoB, g_model_BtoA)
+			save_models(i, g_model_AtoB, g_model_BtoA, domain_a, domain_b)
    
 # load image data
 dataset = load_real_samples(path_to_npz)
