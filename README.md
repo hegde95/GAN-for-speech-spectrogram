@@ -12,6 +12,7 @@ Github link: [https://github.com/hegde95/GAN-for-speech-spectrogram](https://git
 
 
 
+
 ## Objective <br />
 The main objective is to apply style transfer on speech spectrograms in order to change the emotions conveyed in said speech.<br/>
 
