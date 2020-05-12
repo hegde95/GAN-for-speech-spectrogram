@@ -57,7 +57,7 @@ The following are results for 3, 6 and 9 ReNet blocks in the the transformer:
 
 |Emotion|"Dogs are sitting by the door" (3)|"Dogs are sitting by the door" (6)|"Dogs are sitting by the door" (9)|
 | :----: | :----: | :----: | :----: |
-|Neutral (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|
+|Neutral (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.wav)|
 
 
