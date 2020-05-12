@@ -53,7 +53,7 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 
 ### Audio from same data set:<br />
 
-|Emotion|"Dogs are sitting by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|
+|Emotion|"Kids are talking by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|
 | :----: | :----: | :----: | :----: |
 |Calm|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.wav)|
 |Anger|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_anger_generated.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_anger_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_anger_generated.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_anger_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_anger_generated.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_anger_generated.wav)|
