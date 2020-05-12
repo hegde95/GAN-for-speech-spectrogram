@@ -53,6 +53,14 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 
 ### Audio from same data set:<br />
 
+The following are results for 3, 6 and 9 ReNet blocks in the the transformer:
+
+|Emotion|"Dogs are sitting by the door" (3)|"Dogs are sitting by the door" (6)|"Dogs are sitting by the door" (9)|
+| :----: | :----: | :----: | :----: |
+|Neutral (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|
+|Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.wav)|
+
+
 |Emotion|"Kids are talking by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|
 | :----: | :----: | :----: | :----: | :----: |
 |Calm (Original)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08.wav)|
