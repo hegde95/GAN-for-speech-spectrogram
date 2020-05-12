@@ -53,7 +53,7 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 
 ### Audio from same data set:<br />
 
-
+|script|Calm|Angry|Fearful|
 | :----: | :----: | :----: | :----: |
 |script|Calm|Angry|Fearful|
 |"Dogs are sitting by the door"|   [![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.wav)    |   [![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_anger_generated.wav) |   [![Output Fearful speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_fearful_generated.wav) |
