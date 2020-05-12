@@ -13,17 +13,18 @@ import cv2
 import sys
 from tensorflow.keras.models import load_model
 from tensorflow_addons.layers import InstanceNormalization
-from os import path
+from os import path,listdir
 # import warnings, ParameterError
 from scipy.io.wavfile import write
 
 
 path_to_models = "./models"
 path_to_audio = "./test_audio/SeenAudio"
-path_to_results = "./results/GoodAudio"
+path_to_results = "./results/GoodAudio2"
 
 def get_spectrogram(name_of_audio):
     y, sr = librosa.load(path.join(path_to_audio,name_of_audio),sr=16000)
+    write(path.join(path_to_results,name_of_audio), 16000, y*3)    
     max_len = 257
     D = np.abs(librosa.stft(y,n_fft = 512,hop_length = 256))
     amp_max = np.amax(D)
@@ -99,10 +100,10 @@ def spec_to_audio(X_out, name_gen):
     im = (im*80.0/255.0 ) -80.0
     im = librosa.db_to_amplitude(im)
     y2 = griffinlim(im,hop_length=256)
-    write(path.join(path_to_results,name_gen+".wav"), 16000, y2*2)
+    write(path.join(path_to_results,name_gen+".wav"), 16000, y2*3)
     
 def tester(name_of_audio,name_of_model):
-    domain2 = name_of_model.split("_")[0].split("2")[1]
+    domain2 = name_of_model.split("_")[2].split("2")[1]
     A_real = get_spectrogram(name_of_audio)
     A_real = np.reshape(A_real,(1,260,260,1))
     cust = {'InstanceNormalization': InstanceNormalization}
@@ -112,6 +113,11 @@ def tester(name_of_audio,name_of_model):
     spec_to_audio(B_generated[0],name_gen)
     
 if __name__ == "__main__":
-    name_of_audio = "calm_010.wav"
-    name_of_model = "Calm2Fearful_generator.h5"
-    tester(name_of_audio,name_of_model)
+    # name_of_model = "g_model_calm2surprised_030000.h5"
+    # name_of_model = "g_model_calm2disgust_030000.h5"
+    # name_of_model = "g_model_calm2sad_030000.h5"
+    name_of_model = "g_model_calm2anger.h5"
+    # name_of_model = "g_model_calm2happy_030000.h5"
+    # name_of_model = "g_model_calm2fearful_039000.h5"
+    for name_of_audio in listdir(path_to_audio):
+        tester(name_of_audio,name_of_model)
