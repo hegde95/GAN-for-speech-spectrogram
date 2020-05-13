@@ -55,16 +55,18 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 
 The following are results for 3, 6 and 9 ReNet blocks in the the transformer trained for 100 epochs:
 
+
 |Emotion|"Dogs are sitting by the door" (3)|"Dogs are sitting by the door" (6)|"Dogs are sitting by the door" (9)|
 | :----: | :----: | :----: | :----: |
 |Neutral (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01.wav)|
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.wav)|
 
 
+
 The following are results for 260 X 260 and 520 X 520 spectrograms, trained for 100 epochs:
 
 |Emotion|"Dogs are sitting by the door" (260 X 260)|"Dogs are sitting by the door" (520 X 520)|
-| :----: | :----: |
+| :----: | :----: | :----: |
 |Calm (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.wav)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.wav)|
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.wav)|
 
