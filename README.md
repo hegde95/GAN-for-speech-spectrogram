@@ -53,7 +53,7 @@ Below are a couple of input and output audio files from calm to angry and fearfu
 
 ### Audio from same data set:<br />
 
-The following are results for 3, 6 and 9 ReNet blocks in the the transformer:
+The following are results for 3, 6 and 9 ReNet blocks in the the transformer trained for 100 epochs:
 
 |Emotion|"Dogs are sitting by the door" (3)|"Dogs are sitting by the door" (6)|"Dogs are sitting by the door" (9)|
 | :----: | :----: | :----: | :----: |
