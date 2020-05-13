@@ -67,8 +67,8 @@ The following are results for 260 X 260 and 520 X 520 spectrograms, trained for 
 
 |Emotion|"Dogs are sitting by the door" (260 X 260)|"Dogs are sitting by the door" (520 X 520)|
 | :----: | :----: | :----: |
-|Calm (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.wav)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.wav)|
-|Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.wav)|
+|Calm (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger1.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger1.wav)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.wav)|
+|Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger1.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger1.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.wav)|
 
 
 
