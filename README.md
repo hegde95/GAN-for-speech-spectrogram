@@ -121,7 +121,7 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 
 
 |Emotion|"Gaadi waala aya ghar se kachra nikal"|"Konegu project mugithu"|
-| :----: | :----: | :----: |
+| :-----------: | :--------------: | :--------------: |
 |Calm (Original)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan.wav)|
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Anger_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Anger_generated.wav)|
 |Fearful|[![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Fearful_generated.wav)|[![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Fearful_generated.wav)|
