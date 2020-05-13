@@ -61,6 +61,17 @@ The following are results for 3, 6 and 9 ReNet blocks in the the transformer tra
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.wav)|
 
 
+The following are results for 260 X 260 and 520 X 520 spectrograms, trained for 100 epochs:
+
+|Emotion|"Dogs are sitting by the door" (260 X 260)|"Dogs are sitting by the door" (520 X 520)|
+| :----: | :----: |
+|Calm (Original)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_real_calm_for_anger.wav)|[![Input Neutral speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_real_calm_for_anger.wav)|
+|Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.wav)|
+
+
+
+
+
 |Emotion|"Kids are talking by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|
 | :----: | :----: | :----: | :----: | :----: |
 |Calm (Original)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14.wav)|[![Input Calm speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08.jpg "Input Calm speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08.wav)|
