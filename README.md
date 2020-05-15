@@ -47,6 +47,17 @@ The source and target data format in this project are .wav files, but our GAN's 
 ### -- CycleGANs: <br/>
 For our project we attemted to implement a CycleGAN as this has been shown to perform well on style transfer tasks. Also, to be size (and therefore fft length) independent, we use a PatchGAN model for our descriminator network .This code was based on [this link](https://machinelearningmastery.com/cyclegan-tutorial-with-keras/)<br />
 
+
+Here is the link to our [presentation](/EE599_final_presentation.pptx)<br/>
+
+Here is a video showing a demo: <br/>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qP9sjOJIR-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+
+Here is a link to our [report](/EE599_report_final.pdf)<br/>
+
+
 ## Results <br/>
 Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (***Click on the image to hear the audio***.) <br/>
 
@@ -126,15 +137,6 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Anger_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Anger_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Anger_generated.wav)|
 |Fearful|[![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_hin_Fearful_generated.wav)|[![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_kan_Fearful_generated.wav)|
 
-
-Here is the link to our [presentation](/EE599_final_presentation.pptx)<br/>
-
-Here is a video showing a demo: <br/>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qP9sjOJIR-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
-
-Here is a link to our [report](/EE599_report_final.pdf)<br/>
 
 ## Contributors <br/>
 ##### Shashank Hegde - [https://www.linkedin.com/in/karkala-shashank-hegde/](https://www.linkedin.com/in/karkala-shashank-hegde/)<br/>
