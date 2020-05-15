@@ -51,14 +51,16 @@ For our project we attemted to implement a CycleGAN as this has been shown to pe
 
 ## Documentation <br/>
 
-Here is the link to our [presentation](/EE599_final_presentation.pptx)<br/>
+***Here is the link to our [presentation](/EE599_final_presentation.pptx)***<br/>
+
+
+***Here is a link to our [report](/EE599_report_final.pdf)***<br/>
+
 
 Here is a video showing a demo: <br/>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qP9sjOJIR-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
-
-Here is a link to our [report](/EE599_report_final.pdf)<br/>
 
 
 ## Results <br/>
