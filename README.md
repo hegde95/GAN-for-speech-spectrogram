@@ -62,7 +62,7 @@ Here is a link to our [report](/EE599_report_final.pdf)<br/>
 
 
 ## Results <br/>
-Below are a couple of input and output audio files from calm to angry and fearful with the corresponding spectrograms. (***Click on the image to hear the audio***.) <br/>
+Below are a couple of input and output audio files with the corresponding spectrograms, tested with with different models. (***Click on the image to hear the audio***.) <br/>
 
 
 ### Audio from same data set:<br />
