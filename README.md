@@ -23,19 +23,19 @@ Recent studies have successfully shown how style transfer can be applied on imag
 ### -- Data set: <br/>
 For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing). For this project, we chose to convert audio from "calm" to "anger" and "fearful". The entire set of npz files can be found at this links:<br/>
 
-calm2surprised- https://drive.google.com/uc?id=15HlogMsEX9juzL1j7HqweDQv9F5tJFuG
+calm2surprised- [https://drive.google.com/uc?id=15HlogMsEX9juzL1j7HqweDQv9F5tJFuG](https://drive.google.com/uc?id=15HlogMsEX9juzL1j7HqweDQv9F5tJFuG)
 
-calm2sad- https://drive.google.com/uc?id=15HlO9YvZjMtbcEiXajfE9uqmrVS0Unep
+calm2sad- [https://drive.google.com/uc?id=15HlO9YvZjMtbcEiXajfE9uqmrVS0Unep](https://drive.google.com/uc?id=15HlO9YvZjMtbcEiXajfE9uqmrVS0Unep)
 
-calm2happy - https://drive.google.com/uc?id=153PIrQEk_agKiUOP5cujrVyGjnxDqKhd
+calm2happy - [https://drive.google.com/uc?id=153PIrQEk_agKiUOP5cujrVyGjnxDqKhd](https://drive.google.com/uc?id=153PIrQEk_agKiUOP5cujrVyGjnxDqKhd)
 
-calm2fearful - https://drive.google.com/uc?id=14scuVs2nlNH29DIWecrNrCcwNAVR0orG
+calm2fearful - [https://drive.google.com/uc?id=14scuVs2nlNH29DIWecrNrCcwNAVR0orG](https://drive.google.com/uc?id=14scuVs2nlNH29DIWecrNrCcwNAVR0orG)
 
-calm2disgust - https://drive.google.com/uc?id=14s7kWrDQP61X9QXYDV-W3W4YIukJs_55
+calm2disgust - [https://drive.google.com/uc?id=14s7kWrDQP61X9QXYDV-W3W4YIukJs_55](https://drive.google.com/uc?id=14s7kWrDQP61X9QXYDV-W3W4YIukJs_55)
 
-calm2anger - https://drive.google.com/uc?id=14q4aZseMCQO_xbbmX-JRsbRSlGX9bB3E
+calm2anger - [https://drive.google.com/uc?id=14q4aZseMCQO_xbbmX-JRsbRSlGX9bB3E](https://drive.google.com/uc?id=14q4aZseMCQO_xbbmX-JRsbRSlGX9bB3E))
 
-fearful2surprised - https://drive.google.com/uc?id=167zknyKgV5r8qO_fLbbFLT1A76WwTWiL <br />
+fearful2surprised - [https://drive.google.com/uc?id=167zknyKgV5r8qO_fLbbFLT1A76WwTWiL](https://drive.google.com/uc?id=167zknyKgV5r8qO_fLbbFLT1A76WwTWiL) <br />
 
 <br />
 
