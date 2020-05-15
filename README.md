@@ -21,7 +21,7 @@ Recent studies have successfully shown how style transfer can be applied on imag
 
 ## Methodology <br/>
 ### -- Data set: <br/>
-For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing). For this project, we chose to convert audio from "calm" to "anger" and "fearful". The entire set of npz files can be found at this links:<br/>
+For this project we chose the RAVDESS [RAVDESS](https://zenodo.org/record/1188976#.Xq-sIvJKg5k) data set. The data set contains lexically-matched statements in a neutral North American accent spoken with emotions from anger, calm, disgust, fearful, happy, neutral, sad and surprised. The cleaned and re-arranged data can be found [here](https://drive.google.com/drive/folders/12o5dMpEHqxIb8Qm9yHZB0s9at2lw3KPM?usp=sharing). For this project, we chose to convert audio from "calm" to other emotions. The entire set of npz files can be found at this links:<br/>
 
 calm2surprised- [https://drive.google.com/uc?id=15HlogMsEX9juzL1j7HqweDQv9F5tJFuG](https://drive.google.com/uc?id=15HlogMsEX9juzL1j7HqweDQv9F5tJFuG)
 
@@ -76,6 +76,8 @@ The following are results for 3, 6 and 9 ReNet blocks in the the transformer tra
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger3_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger6_generated.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/neutral_01_anger9_generated.wav)|
 
 
+We found that 3 ResNet blocks performed poorly without noticeable emotion transfer or perfect reconstruction of original audio. The model with 6 ResNet blocks performed better with satisfactory emotion transfer and reconstruction. Although 9 ResNet blocks gave very good results in terms of emotion transfer, the reconstructed audio suffered from noise. And this was computationally expensive too. Hence, we decided to proceed with 6 ResNet blocks which has a good compromise between style transfer, denoising and computational efficiency.<br/>
+
 
 The following are results for 260 X 260 and 520 X 520 spectrograms, trained for 100 epochs:
 
@@ -85,8 +87,10 @@ The following are results for 260 X 260 and 520 X 520 spectrograms, trained for 
 |Angry|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger1.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/260_generated_anger1.wav)|[![Output Angry speech](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.jpg "Output Angry speech")](/GAN-for-speech-spectrogram/results/GoodAudio/520_generated_anger.wav)|
 
 
+It is evident that the model which generated a 260X260 spectrogram had a better reconstruction compared to the other. This finding also helped us in reducing computation for further experiments.<br/>
 
-After the above experimentation, we found that the models showed peak performance at the epochs denoted under the emotion. These are the results after implementing emotion transfer on the same audio file:
+
+After the above experimentation, we found that the models showed peak performance at the epochs denoted under the emotion. These are the results after implementing emotion transfer on the same audio file:<br/>
 
 |Emotion|"Kids are talking by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|"Dogs are sitting by the door"|
 | :----: | :----: | :----: | :----: | :----: |
@@ -98,12 +102,12 @@ After the above experimentation, we found that the models showed peak performanc
 |Happy(30000)|[![Output Happy speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_happy_generated.jpg "Output Happy speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_happy_generated.wav)|[![Output Happy speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_happy_generated.jpg "Output Happy speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_happy_generated.wav)|[![Output Happy speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_happy_generated.jpg "Output Happy speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_happy_generated.wav)|[![Output Happy speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08_happy_generated.jpg "Output Happy speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08_happy_generated.wav)|
 |Sad(30000)|[![Output Sad speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_sad_generated.jpg "Output Sad speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_04_sad_generated.wav)|[![Output Sad speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_sad_generated.jpg "Output Sad speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_11_sad_generated.wav)|[![Output Sad speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_sad_generated.jpg "Output Sad speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_14_sad_generated.wav)|[![Output Sad speech](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08_sad_generated.jpg "Output Sad speech")](/GAN-for-speech-spectrogram/results/GoodAudio/calm_08_sad_generated.wav)|
 
-
-
-The above samples show that the spectrograms of angry and fearful speech have more predominant and spaced out harmonics. These are characteristics of angry and fearful speech.<br />
+From the above table we see two conversions, calm to fearful and calm to surprised, gives the best emotion transfer. Also there were noticeable characteristic changes in the harmonic structure of the input speech.<br />
 
 
 ### Unseen audio from same data set:<br />
+A few audio files from the dataset were held back for testing and optimizing our model. The spectrograms shown below are generated for these unseen input audio files.<br />
+
 
 |Emotion|"Kids are talking by the door"|"Dogs are sitting by the door"|
 | :----: | :----: | :----: |
@@ -114,6 +118,8 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 
 
 ### Same script by unseen actor:<br />
+Spectrograms below shows the performance of the model on an audio file of the same script, but by an actor not from the dataset. The model shows good performance even on unseen data.<br />
+
 
 |Emotion|"Dogs are sitting by the door"|
 | :----: | :----: |
@@ -122,6 +128,7 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 |Fearful|[![Output Fearful speech](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_eng2_Fearful_generated.jpg "Output Fearful speech")](/GAN-for-speech-spectrogram/results/UnseenAudio/calm_eng2_Fearful_generated.wav)|
 
 ### Lexically similar script by unseen actor:<br />
+The following results demonstrate the ability of our model to transfer emotions on audio clips of unseen actors speaking lexically similar sentences.<br />
 
 
 |Emotion|"This project is fun"|"Three plus one equals four"|
@@ -132,6 +139,7 @@ The above samples show that the spectrograms of angry and fearful speech have mo
 
 
 ### Different laguage by unseen actor:<br />
+We also experimented on audio clips of unseen actors speaking in a different language (Hindi and Kannada). The model did not produce results with sufficient style transfer. However, the model was still able to reconstruct the audio clip of an unseen language without much noise.<br />
 
 
 |Emotion|"Gaadi waala aya ghar se kachra nikal"|"Konegu project mugithu"|
